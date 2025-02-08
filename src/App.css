@@ -156,6 +156,11 @@ body {
   padding-bottom: 5px;
 }
 
+.section h3 {
+  color: #0073e6;
+  margin-bottom: 8px;
+}
+
 .experience-item,
 .project-item {
   margin-bottom: 15px;

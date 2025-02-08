@@ -42,9 +42,11 @@ function NavBar() {
 function Profile() {
   return (
     <section id="profile" className="section">
-      <h2>个人简介</h2>
+      <h2 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        🎯个人简介
+      </h2>
       <div class="section">
-        <h2>🎯 职业定位</h2>
+        <h3>🔍 职业定位</h3>
         <p>
           资深 <span class="highlight">前端开发工程师</span>，专注于{' '}
           <span class="highlight">Web 前端技术、用户体验优化和高性能前端架构</span>。熟练掌握{' '}
@@ -55,7 +57,7 @@ function Profile() {
       </div>
 
       <div class="section">
-        <h2>🚀 核心优势</h2>
+        <h3>🚀 核心优势</h3>
         <ul>
           <li>
             ✅ <span class="highlight">前端技术专家</span>
@@ -78,7 +80,7 @@ function Profile() {
       </div>
 
       <div class="section">
-        <h2>🏆 工作经历亮点</h2>
+        <h3>🏆 工作经历亮点</h3>
         <ul>
           <li>
             🔹 <span class="highlight">主导多个大型前端项目</span>，优化架构，提升可维护性与扩展性。
@@ -100,7 +102,7 @@ function Profile() {
       </div>
 
       <div class="section">
-        <h2>💡 个人愿景</h2>
+        <h3>💡 个人愿景</h3>
         <p>热衷探索前沿技术，持续优化开发流程，期待在未来项目中创造更大价值！</p>
       </div>
     </section>
@@ -110,7 +112,9 @@ function Profile() {
 function Experience() {
   return (
     <section id="experience" className="section">
-      <h2>工作经验</h2>
+      <h2 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        💼 工作经验
+      </h2>
       <div className="experience-item">
         <h3>公司名称 A (20XX - 20XX)</h3>
         <p>职位：前端开发工程师</p>
@@ -136,7 +140,7 @@ function Experience() {
 function Skills() {
   return (
     <section id="skills" className="section">
-      <h2>🚀 技能</h2>
+      <h2 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>🛠️ 技能</h2>
 
       <div className="skills-container">
         {/* 基础技能 */}
@@ -208,7 +212,9 @@ function Projects() {
 
   return (
     <section id="projects" className="section">
-      <h2>🚀 项目经验</h2>
+      <h2 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        🌍 项目经验
+      </h2>
       <div className="projects-container">
         {projectList.map((project, index) => (
           <div className="project-card" key={index}>
@@ -252,7 +258,9 @@ function Education() {
 
   return (
     <section id="education" className="section">
-      <h2>🎓 教育背景</h2>
+      <h2 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        🎓 教育背景
+      </h2>
       <div className="education-container">
         {educationList.map((edu, index) => (
           <div className="education-card" key={index}>
@@ -274,7 +282,9 @@ function Education() {
 function Contact() {
   return (
     <section id="contact" className="section">
-      <h2>📞 联系方式</h2>
+      <h2 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        📞 联系方式
+      </h2>
       <div className="contact-container">
         <div className="contact-item">
           <FaEnvelope className="contact-icon" />
