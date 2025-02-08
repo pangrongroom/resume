@@ -1,0 +1,157 @@
+/* Reset 样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* 动画定义 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 主容器 */
+.App {
+  max-width: 750px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* 头部 */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 5px;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* 导航 */
+.nav {
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav ul li {
+  margin: 5px 10px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav ul li a:hover {
+  background-color: #ddd;
+  transform: scale(1.05);
+}
+
+/* 各区块 */
+.section {
+  margin-bottom: 30px;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+  /* 每个 section 渐进出现，可通过 delay 来错开时间 */
+}
+
+.section:nth-of-type(1) {
+  animation-delay: 0.2s;
+}
+
+.section:nth-of-type(2) {
+  animation-delay: 0.4s;
+}
+
+.section:nth-of-type(3) {
+  animation-delay: 0.6s;
+}
+
+.section:nth-of-type(4) {
+  animation-delay: 0.8s;
+}
+
+.section:nth-of-type(5) {
+  animation-delay: 1s;
+}
+
+.section:nth-of-type(6) {
+  animation-delay: 1.2s;
+}
+
+.section h2 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.experience-item,
+.project-item {
+  margin-bottom: 15px;
+}
+
+.experience-item h3,
+.project-item h3 {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+/* 页脚 */
+.footer {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+  color: #777;
+  animation: fadeInUp 1s ease-out;
+}
+
+/* 响应式设计 */
+@media (min-width: 768px) {
+  .header h1 {
+    font-size: 3rem;
+  }
+
+  .section h2 {
+    font-size: 2rem;
+  }
+}
