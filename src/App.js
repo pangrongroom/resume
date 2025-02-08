@@ -13,11 +13,9 @@ function Header() {
 }
 
 function NavBar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-
   return (
     <nav className="nav">
-      <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
+      <ul className="nav-links">
         <li>
           <a href="#profile">个人简介</a>
         </li>
