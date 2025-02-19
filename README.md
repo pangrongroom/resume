@@ -11,8 +11,7 @@
 
 ## 项目预览
 
-![预览截图](./screenshot.png)
-（或提供在线预览链接：[在线预览](https://pangrongroom.github.io/resume/)）
+![在线预览](https://stellar-taffy-9ffd03.netlify.app)）
 
 ## 技术栈
 
