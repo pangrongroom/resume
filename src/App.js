@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { FaEnvelope, FaPhone, FaGithub, FaRocket } from 'react-icons/fa'
+import { FaEnvelope, FaPhone, FaRocket } from 'react-icons/fa'
+import { SiGitee } from 'react-icons/si' // 导入 Gitee 图标
 import './App.css'
 import './NavBar.css' // 引入样式文件
 
@@ -116,21 +117,31 @@ function Experience() {
         💼 工作经验
       </h2>
       <div className="experience-item">
-        <h3>公司名称 A (20XX - 20XX)</h3>
+        <h3>安徽船湾信息技术有限公司 (2019.12 - 2024.10)</h3>
         <p>职位：前端开发工程师</p>
         <ul>
-          <li>负责网站前端开发，使用 HTML、CSS、JavaScript 构建响应式页面。</li>
-          <li>与后端团队配合，集成 RESTful API，实现数据动态展示。</li>
-          <li>优化页面性能，提高加载速度和用户体验。</li>
+          <li>
+            主导使用Vue/React/Flutter框架开发企业级后台管理系统及H5以及app项目，封装可复用组件库，提升团队开发效率40%
+          </li>
+          <li>
+            通过Webpack/Gulp构建工具优化代码压缩与打包流程，页面加载速度缩短30%，用户体验显著提升
+          </li>
+          <li>
+            解决多浏览器兼容性问题（Chrome/Safari/Firefox），采用CSS3动画与懒加载技术，降低首屏渲染时间至1.5秒内
+          </li>
+          <li>利用 Node.js 搭建后端服务，实现前后端数据交互，提升系统性能与安全性</li>
+          <li>参与项目需求分析与设计，制定合理的技术方案，确保项目按时上线</li>
         </ul>
       </div>
       <div className="experience-item">
-        <h3>公司名称 B (20XX - 20XX)</h3>
+        <h3>合肥宇创互娱科技有限公司 (2024.11 - 至今)</h3>
         <p>职位：前端开发工程师</p>
         <ul>
-          <li>参与大型项目的前端架构设计与开发。</li>
-          <li>利用 React/Vue 框架开发单页应用（SPA）。</li>
-          <li>编写单元测试，确保代码质量与稳定性。</li>
+          <li>参与大型项目的前端架构设计与开发</li>
+          <li>利用 React 框架开发单页应用（SPA）</li>
+          <li>编写单元测试，确保代码质量与稳定性</li>
+          <li>利用 React Hooks 实现复杂的交互逻辑，提升代码复用性与可维护性</li>
+          <li>利用 React Native 开发跨平台移动应用，支持 iOS 和 Android 平台</li>
         </ul>
       </div>
     </section>
@@ -193,20 +204,29 @@ function Projects() {
       title: '📌 企业级管理后台系统',
       description:
         '开发基于 React + Ant Design 的企业级管理后台，采用动态路由，权限控制及数据可视化，提升管理效率。',
-      techStack: ['React', 'Ant Design', 'Redux', 'ECharts', 'Node.js'],
-      link: 'https://github.com/example-admin',
+      techStack: ['React', 'Ant Design', 'Redux', 'Node.js'],
+      // link: 'https://github.com/example-admin',
     },
     {
-      title: '📱 移动端 PWA 应用',
-      description: '构建基于 Vue + Vuex + PWA 的移动端 Web 应用，离线可用，用户体验媲美原生应用。',
-      techStack: ['Vue', 'Vuex', 'PWA', 'Axios', 'Vite'],
-      link: 'https://github.com/example-pwa',
+      title: '📱 移动端应用',
+      description:
+        '构建基于 Flutter 的移动端应用，实现跨平台开发，同时兼容IOS和Android，提供良好的用户体验。',
+      techStack: ['Flutter', 'Dart', 'Provider', 'SQLite'],
+      // link: 'https://github.com/example-pwa',
     },
     {
-      title: '🌍 SSR+SEO 优化电商网站',
-      description: '基于 Next.js 开发 SSR 电商平台，提升 SEO，优化首屏加载速度。',
-      techStack: ['Next.js', 'GraphQL', 'Tailwind CSS', 'MongoDB'],
-      link: 'https://github.com/example-ecommerce',
+      title: '🌍 在线学习C++基础代码',
+      description:
+        '通过在线代码编辑器，用户可以在线编写、运行、调试C++代码，提高学习效率，增强思维逻辑。',
+      techStack: ['Vue.js', 'Element UI'],
+      link: 'http://s.codingle.cn/#/editHome',
+    },
+    {
+      title: '🛍️ 文潮集市H5',
+      description:
+        '文潮集市是一个文化创意产品交易平台，H5页面主要用于活动推广、产品展示交易等，采用React.js框架开发。',
+      techStack: ['React', 'React Router', 'Axios'],
+      link: 'https://wcjs.ahbq.com.cn/pages/Market/index',
     },
   ]
 
@@ -295,9 +315,9 @@ function Contact() {
           <a href="tel:13083188036">130-8318-8036</a>
         </div>
         <div className="contact-item">
-          <FaGithub className="contact-icon" />
-          <a href="https://github.com/pangrongroom" target="_blank" rel="noopener noreferrer">
-            GitHub: pangrongroom
+          <SiGitee className="contact-icon" />
+          <a href="https://gitee.com/wangchito" target="_blank" rel="noopener noreferrer">
+            Gitee: wangchito
           </a>
         </div>
       </div>
