@@ -51,8 +51,8 @@ function Profile() {
         <p>
           资深 <span class="highlight">前端开发工程师</span>，专注于{' '}
           <span class="highlight">Web 前端技术、用户体验优化和高性能前端架构</span>。熟练掌握{' '}
-          <span class="highlight">JavaScript、TypeScript、React、Vue、Flutter</span>，并具备{' '}
-          <span class="highlight">Node.js、Webpack、Vite</span>{' '}
+          <span class="highlight">JavaScript、TypeScript、React、Vue、Flutter、Electron</span>
+          ，并具备 <span class="highlight">Node.js、Webpack、Vite</span>{' '}
           等构建工具经验，致力于打造高效、稳定、用户友好的前端解决方案。
         </p>
       </div>
@@ -226,6 +226,13 @@ function Projects() {
         '开发基于 React + Ant Design 的企业级管理后台，采用动态路由，权限控制及数据可视化，提升管理效率。',
       techStack: ['React', 'Ant Design', 'Redux', 'Node.js'],
       // link: 'https://github.com/example-admin',
+    },
+    {
+      title: '🖼️ 壁纸切换器（开源项目）',
+      description:
+        '开发桌面壁纸自动切换工具，支持定时切换、多源高清壁纸获取、自动清理、系统托盘操作及开机自启动功能，提升用户桌面体验。',
+      techStack: ['Electron'],
+      link: 'https://gitee.com/wangchito/wallpaper-changer',
     },
     {
       title: '📱 移动端应用',
