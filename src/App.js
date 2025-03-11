@@ -51,7 +51,7 @@ function Profile() {
         <p>
           资深 <span class="highlight">前端开发工程师</span>，专注于{' '}
           <span class="highlight">Web 前端技术、用户体验优化和高性能前端架构</span>。熟练掌握{' '}
-          <span class="highlight">JavaScript、TypeScript、React、Vue</span>，并具备{' '}
+          <span class="highlight">JavaScript、TypeScript、React、Vue、Flutter</span>，并具备{' '}
           <span class="highlight">Node.js、Webpack、Vite</span>{' '}
           等构建工具经验，致力于打造高效、稳定、用户友好的前端解决方案。
         </p>
@@ -174,6 +174,16 @@ function Skills() {
           </ul>
         </div>
 
+        {/* 移动开发 */}
+        <div className="skills-category">
+          <h3>📱 移动开发</h3>
+          <ul>
+            <li>✅ Flutter, Dart</li>
+            <li>✅ 跨平台应用开发</li>
+            <li>✅ 原生集成与性能优化</li>
+          </ul>
+        </div>
+
         {/* 构建与工具 */}
         <div className="skills-category">
           <h3>🛠️ 构建与工具</h3>
@@ -181,6 +191,16 @@ function Skills() {
             <li>✅ Webpack, Vite, Babel, ESLint</li>
             <li>✅ Git & GitHub, CI/CD, Docker</li>
             <li>✅ Jest, Cypress, 单元测试</li>
+          </ul>
+        </div>
+
+        {/* 后端技能 */}
+        <div className="skills-category">
+          <h3>🔧 后端技能</h3>
+          <ul>
+            <li>✅ Python, Django, Flask</li>
+            <li>✅ 数据分析与可视化</li>
+            <li>✅ 自动化脚本与工具开发</li>
           </ul>
         </div>
 
@@ -269,7 +289,7 @@ function Education() {
       degree: '计算机科学与技术 · 专科',
       duration: '2015 - 2018',
       highlights: [
-        '主修课程：数据结构、计算机网络、操作系统、前端开发',
+        '主修课程：数据结构、计算机网络、操作系统、C语言',
         '荣获年度优秀团支书',
         '实验室项目：参与前端可视化工具开发',
       ],
