@@ -221,11 +221,11 @@ function Skills() {
 function Projects() {
   const projectList = [
     {
-      title: '📌 企业级管理后台系统',
+      title: '🔍 Boss岗位爬虫（开源项目）',
       description:
-        '开发基于 React + Ant Design 的企业级管理后台，采用动态路由，权限控制及数据可视化，提升管理效率。',
-      techStack: ['React', 'Ant Design', 'Redux', 'Node.js'],
-      // link: 'https://github.com/example-admin',
+        '开发Python爬虫程序，爬取Boss直聘网站的前端岗位信息，支持自定义城市和搜索关键词，数据保存为CSV和JSON格式，内置反爬虫机制（随机延迟、自定义请求头）。',
+      techStack: ['Python', 'BeautifulSoup', 'Requests', 'Pandas'],
+      link: 'https://gitee.com/wangchito/jd-spider',
     },
     {
       title: '🖼️ 壁纸切换器（开源项目）',
@@ -239,7 +239,7 @@ function Projects() {
       description:
         '构建基于 Flutter 的移动端应用，实现跨平台开发，同时兼容IOS和Android，提供良好的用户体验。',
       techStack: ['Flutter', 'Dart', 'Provider', 'SQLite'],
-      // link: 'https://github.com/example-pwa',
+      link: 'https://apps.apple.com/cn/app/%E7%A6%BE%E7%BE%8E%E9%9B%86%E9%85%8D/id6479513177',
     },
     {
       title: '🌍 在线学习C++基础代码',
