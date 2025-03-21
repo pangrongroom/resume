@@ -402,12 +402,6 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <p>&copy; {currentYear} 汪志涛. 保留所有权利。</p>
-        <div className="footer-links">
-          <a href="#profile">简介</a>
-          <a href="#experience">经验</a>
-          <a href="#skills">技能</a>
-          <a href="#projects">项目</a>
-        </div>
       </div>
       <p className="copyright">
         用React打造 - 最后更新: {currentYear}年{new Date().getMonth() + 1}月
