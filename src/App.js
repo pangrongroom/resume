@@ -8,7 +8,13 @@ function Header() {
   return (
     <header className="header">
       <h1>汪志涛</h1>
-      <p>前端开发工程师 | 5年工作经验</p>
+      <p>资深前端开发工程师 | 5年+工作经验</p>
+      <div className="header-tags">
+        <span>React</span>
+        <span>Vue</span>
+        <span>Flutter</span>
+        <span>Electron</span>
+      </div>
     </header>
   )
 }
@@ -46,6 +52,9 @@ function Profile() {
       <h2 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         🎯个人简介
       </h2>
+      <div className="profile-summary">
+        <p className="profile-tagline">资深前端工程师，专注于构建高性能、用户友好的现代Web应用</p>
+      </div>
       <div class="section">
         <h3>🔍 职业定位</h3>
         <p>
@@ -116,103 +125,129 @@ function Experience() {
       <h2 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         💼 工作经验
       </h2>
-      <div className="experience-item">
-        <h3>安徽船湾信息技术有限公司 (2019.12 - 2024.10)</h3>
-        <p>职位：前端开发工程师</p>
-        <ul>
-          <li>
-            主导使用Vue/React/Flutter框架开发企业级后台管理系统及H5以及app项目，封装可复用组件库，提升团队开发效率40%
-          </li>
-          <li>
-            通过Webpack/Gulp构建工具优化代码压缩与打包流程，页面加载速度缩短30%，用户体验显著提升
-          </li>
-          <li>
-            解决多浏览器兼容性问题（Chrome/Safari/Firefox），采用CSS3动画与懒加载技术，降低首屏渲染时间至1.5秒内
-          </li>
-          <li>利用 Node.js 搭建后端服务，实现前后端数据交互，提升系统性能与安全性</li>
-          <li>参与项目需求分析与设计，制定合理的技术方案，确保项目按时上线</li>
-        </ul>
-      </div>
-      <div className="experience-item">
-        <h3>合肥宇创互娱科技有限公司 (2024.11 - 至今)</h3>
-        <p>职位：前端开发工程师</p>
-        <ul>
-          <li>参与大型项目的前端架构设计与开发</li>
-          <li>利用 React 框架开发单页应用（SPA）</li>
-          <li>编写单元测试，确保代码质量与稳定性</li>
-          <li>利用 React Hooks 实现复杂的交互逻辑，提升代码复用性与可维护性</li>
-          <li>利用 React Native 开发跨平台移动应用，支持 iOS 和 Android 平台</li>
-        </ul>
+      <div className="timeline">
+        <div className="experience-item">
+          <div className="timeline-dot"></div>
+          <div className="timeline-content">
+            <div className="experience-header">
+              <h3>安徽船湾信息技术有限公司</h3>
+              <span className="experience-duration">2019.12 - 2024.10</span>
+            </div>
+            <p className="experience-title">前端开发工程师</p>
+            <ul className="experience-achievements">
+              <li>
+                主导使用Vue/React/Flutter框架开发企业级后台管理系统及H5以及app项目，封装可复用组件库，提升团队开发效率40%
+              </li>
+              <li>
+                通过Webpack/Gulp构建工具优化代码压缩与打包流程，页面加载速度缩短30%，用户体验显著提升
+              </li>
+              <li>
+                解决多浏览器兼容性问题（Chrome/Safari/Firefox），采用CSS3动画与懒加载技术，降低首屏渲染时间至1.5秒内
+              </li>
+              <li>利用 Node.js 搭建后端服务，实现前后端数据交互，提升系统性能与安全性</li>
+              <li>参与项目需求分析与设计，制定合理技术方案，确保项目按时上线</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="experience-item">
+          <div className="timeline-dot"></div>
+          <div className="timeline-content">
+            <div className="experience-header">
+              <h3>合肥宇创互娱科技有限公司</h3>
+              <span className="experience-duration">2024.11 - 至今</span>
+            </div>
+            <p className="experience-title">前端开发工程师</p>
+            <ul className="experience-achievements">
+              <li>参与大型项目的前端架构设计与开发</li>
+              <li>利用 React 框架开发单页应用（SPA）</li>
+              <li>编写单元测试，确保代码质量与稳定性</li>
+              <li>利用 React Hooks 实现复杂的交互逻辑，提升代码复用性与可维护性</li>
+              <li>利用 React Native 开发跨平台移动应用，支持 iOS 和 Android 平台</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   )
 }
 
 function Skills() {
+  const skillCategories = [
+    {
+      title: '📌 基础技能',
+      skills: [
+        { name: 'HTML5/CSS3', level: 95 },
+        { name: 'JavaScript (ES6+)', level: 90 },
+        { name: 'TypeScript', level: 85 },
+        { name: '响应式设计', level: 90 },
+      ],
+    },
+    {
+      title: '⚛️ 前端框架',
+      skills: [
+        { name: 'React.js', level: 90 },
+        { name: 'Vue.js', level: 85 },
+        { name: 'Redux/Vuex', level: 80 },
+        { name: 'Next.js', level: 75 },
+      ],
+    },
+    {
+      title: '📱 移动开发',
+      skills: [
+        { name: 'Flutter', level: 85 },
+        { name: 'React Native', level: 75 },
+      ],
+    },
+    {
+      title: '🛠️ 构建与工具',
+      skills: [
+        { name: 'Webpack', level: 80 },
+        { name: 'Vite', level: 75 },
+        { name: 'Babel', level: 70 },
+        { name: 'ESLint', level: 70 },
+      ],
+    },
+    {
+      title: '🔧 后端技能',
+      skills: [
+        { name: 'Node.js', level: 75 },
+        { name: 'Express.js', level: 70 },
+        { name: 'Python', level: 60 },
+      ],
+    },
+    {
+      title: '🌐 其他',
+      skills: [
+        { name: 'RESTful API', level: 75 },
+        { name: 'GraphQL', level: 65 },
+        { name: 'Serverless', level: 60 },
+      ],
+    },
+  ]
   return (
     <section id="skills" className="section">
       <h2 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>🛠️ 技能</h2>
 
       <div className="skills-container">
-        {/* 基础技能 */}
-        <div className="skills-category">
-          <h3>📌 基础技能</h3>
-          <ul>
-            <li>✅ HTML5, CSS3, JavaScript (ES6+)</li>
-            <li>✅ TypeScript, AJAX, Fetch API</li>
-            <li>✅ 响应式设计, Flexbox, Grid 布局</li>
-          </ul>
-        </div>
-
-        {/* 前端框架 */}
-        <div className="skills-category">
-          <h3>⚛️ 前端框架</h3>
-          <ul>
-            <li>✅ React.js, Vue.js, Next.js</li>
-            <li>✅ Redux, Vuex, Zustand</li>
-            <li>✅ 前端路由 (React Router, Vue Router)</li>
-          </ul>
-        </div>
-
-        {/* 移动开发 */}
-        <div className="skills-category">
-          <h3>📱 移动开发</h3>
-          <ul>
-            <li>✅ Flutter, Dart</li>
-            <li>✅ 跨平台应用开发</li>
-            <li>✅ 原生集成与性能优化</li>
-          </ul>
-        </div>
-
-        {/* 构建与工具 */}
-        <div className="skills-category">
-          <h3>🛠️ 构建与工具</h3>
-          <ul>
-            <li>✅ Webpack, Vite, Babel, ESLint</li>
-            <li>✅ Git & GitHub, CI/CD, Docker</li>
-            <li>✅ Jest, Cypress, 单元测试</li>
-          </ul>
-        </div>
-
-        {/* 后端技能 */}
-        <div className="skills-category">
-          <h3>🔧 后端技能</h3>
-          <ul>
-            <li>✅ Python, Django, Flask</li>
-            <li>✅ 数据分析与可视化</li>
-            <li>✅ 自动化脚本与工具开发</li>
-          </ul>
-        </div>
-
-        {/* 其他技能 */}
-        <div className="skills-category">
-          <h3>🌐 其他</h3>
-          <ul>
-            <li>✅ Node.js, Express.js, Koa</li>
-            <li>✅ RESTful API, GraphQL</li>
-            <li>✅ Serverless, 微前端架构</li>
-          </ul>
-        </div>
+        {skillCategories.map((category, index) => (
+          <div className="skills-category" key={index}>
+            <h3>{category.title}</h3>
+            <div className="skills-list">
+              {category.skills.map((skill, i) => (
+                <div className="skill-item" key={i}>
+                  <div className="skill-info">
+                    <span className="skill-name">✅ {skill.name}</span>
+                    <span className="skill-level">{skill.level}%</span>
+                  </div>
+                  <div className="skill-bar">
+                    <div className="skill-progress" style={{ width: `${skill.level}%` }}></div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   )
@@ -262,11 +297,27 @@ function Projects() {
       <h2 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         🌍 项目经验
       </h2>
+      <p className="section-intro">
+        以下是我参与开发的部分项目，展示了我在不同技术栈和领域的实践经验
+      </p>
       <div className="projects-container">
         {projectList.map((project, index) => (
           <div className="project-card" key={index}>
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
+            <div className="project-header">
+              <h3>{project.title}</h3>
+              <div className="project-links">
+                <a
+                  href={project.link}
+                  className="project-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="link-icon">🔗</span>
+                  <span className="link-text">查看项目</span>
+                </a>
+              </div>
+            </div>
+            <p className="project-description">{project.description}</p>
             <div className="tech-stack">
               {project.techStack.map((tech, i) => (
                 <span className="tech-badge" key={i}>
@@ -274,14 +325,6 @@ function Projects() {
                 </span>
               ))}
             </div>
-            <a
-              href={project.link}
-              className="project-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              🔗 查看项目
-            </a>
           </div>
         ))}
       </div>
@@ -298,7 +341,7 @@ function Education() {
       highlights: [
         '主修课程：数据结构、计算机网络、操作系统、C语言',
         '荣获年度优秀团支书',
-        '实验室项目：参与前端可视化工具开发',
+        '实验室项目：参与前端可视化工具开发, 实现数据可视化分析',
       ],
     },
   ]
@@ -353,9 +396,22 @@ function Contact() {
 }
 
 function Footer() {
+  const currentYear = new Date().getFullYear()
+
   return (
     <footer className="footer">
-      <p>&copy; 2025 汪志涛. 保留所有权利。</p>
+      <div className="footer-content">
+        <p>&copy; {currentYear} 汪志涛. 保留所有权利。</p>
+        <div className="footer-links">
+          <a href="#profile">简介</a>
+          <a href="#experience">经验</a>
+          <a href="#skills">技能</a>
+          <a href="#projects">项目</a>
+        </div>
+      </div>
+      <p className="copyright">
+        用React打造 - 最后更新: {currentYear}年{new Date().getMonth() + 1}月
+      </p>
     </footer>
   )
 }
