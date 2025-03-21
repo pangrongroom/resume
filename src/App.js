@@ -224,7 +224,7 @@ function Projects() {
       title: '🔍 Boss岗位爬虫（开源项目）',
       description:
         '开发Python爬虫程序，爬取Boss直聘网站的前端岗位信息，支持自定义城市和搜索关键词，数据保存为CSV和JSON格式，内置反爬虫机制（随机延迟、自定义请求头）。',
-      techStack: ['Python', 'BeautifulSoup', 'Requests', 'Pandas'],
+      techStack: ['Python', 'BeautifulSoup', 'Requests'],
       link: 'https://gitee.com/wangchito/jd-spider',
     },
     {
